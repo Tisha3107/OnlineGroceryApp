@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".Registration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyNow"
+        android:text="CHECKOUT"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        android:gravity="center"
+        android:layout_margin="25dp"></TextView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname"
+        android:layout_below="@+id/buyNow"
+        android:hint="Full Name"
+        android:backgroundTint="@color/GREY"
+        android:textColorHint="@color/GREY"
+        android:textColor="@color/Black"
+        android:layout_margin="10dp"
+        android:padding="28dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_below="@+id/fullname"
+        android:hint="Address"
+        android:backgroundTint="@color/GREY"
+        android:textColorHint="@color/GREY"
+        android:textColor="@color/Black"
+        android:layout_margin="10dp"
+        android:padding="28dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email2"
+        android:layout_below="@+id/address"
+        android:hint="Email-ID"
+        android:backgroundTint="@color/GREY"
+        android:textColorHint="@color/GREY"
+        android:textColor="@color/Black"
+        android:layout_margin="10dp"
+        android:padding="28dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileno"
+        android:layout_below="@+id/email2"
+        android:hint="Mobile Number"
+        android:backgroundTint="@color/GREY"
+        android:textColorHint="@color/GREY"
+        android:textColor="@color/Black"
+        android:layout_margin="10dp"
+        android:padding="28dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_numbers_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note"
+        android:text="Please Note: We only accept CASH PAYMENT.. We don't accept any other payment mode!"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:layout_below="@id/mobileno"
+        android:textColor="@color/Red"
+        android:gravity="center"
+        android:layout_margin="25dp"></TextView>
+
+    <Button
+        android:id="@+id/buyproduct"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="612dp"
+        android:backgroundTint="@color/LightPink"
+        android:text="CONFIRM ORDER"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</RelativeLayout>

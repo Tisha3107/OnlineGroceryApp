@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".Registration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carttext"
+        android:text="ADD TO CART"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        android:gravity="center"
+        android:layout_margin="25dp"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carttext"
+        android:layout_marginTop="106dp"
+        app:srcCompat="@drawable/cart" />
+
+    <Button
+        android:id="@+id/keepshopping"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/LightPink"
+        android:text="Let's Shop"
+        android:layout_below="@id/imageView5"
+        android:textColor="@color/White"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

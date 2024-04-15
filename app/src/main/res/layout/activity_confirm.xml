@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".Registration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thanks"
+        android:text="THANKYOU FOR SHOPPING WITH US"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        android:gravity="center"
+        android:layout_margin="25dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note1"
+        android:text="Your Order has been successfully placed.."
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_below="@id/thanks"
+        android:textColor="@color/Black"
+        android:gravity="center"
+        android:layout_margin="25dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note2"
+        android:text="It will be delivered within 2-3 days"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_below="@id/note1"
+        android:textColor="@color/Black"
+        android:gravity="center"
+        android:layout_margin="25dp"></TextView>
+
+
+    <Button
+        android:id="@+id/continue1"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/note2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/LightPink"
+        android:text="Continue Shopping?"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/continue1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-4dp"
+        app:srcCompat="@drawable/thankyou" />
+
+
+
+
+
+
+</RelativeLayout>
